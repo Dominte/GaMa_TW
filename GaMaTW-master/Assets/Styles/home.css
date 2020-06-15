@@ -1,0 +1,219 @@
+.navMenu {
+
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: Impact, "Arial Narrow", "Optima", "Geneva";
+    background-color: #333;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+.navbarButton{
+    display: inline;
+    position: relative;
+    float: left;
+    left: 30vw;
+}
+
+.title {
+    color: aliceblue;
+    display: inline;
+    padding: 1.5vw 1.8vw 1.5vw 1.8vw;
+    float: left;
+    text-decoration: none;
+    color:  rgb(221, 221, 138);
+}
+
+.navbarHoverBlock, .navbarNoHover {
+    color: aliceblue;
+    display: block;
+    padding: 1.5vw 1.8vw 1.5vw 1.8vw;
+    text-decoration: none;
+}
+
+.navbarHoverBlock:hover, .active {
+    color: darkblue;
+    background-color: lightgrey;
+}
+
+.navbarNoHover {
+    color: rgb(159, 159, 194);
+    display: block;
+    padding: 1.5vw 1.8vw 1.5vw 1.8vw;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+main {
+    position: relative;
+    top: 75px;
+}
+
+.userFavouriteGames {
+    font-family: "Lucida Console", "Optima", "Geneva";
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: antiquewhite;
+    font-size: 1.6vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-gap: 1.5vw;
+    grid-template-rows-rows: repeat(15, 1fr);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.grid-item1 {
+    grid-column: 2/10;
+    grid-row: 2/6;
+    background-color: slategray;
+    border-radius: 7px;
+    border: 2px solid #2e3346;
+}
+
+
+.grid-item2 {
+    grid-column: 2/10;
+    grid-row: 7/12;
+    background-color: slategray;
+    border-radius: 7px;
+    border: 2px solid #2e3346;
+}
+
+.topUserTitle {
+    font-family: "Lucida Console", "Optima", "Geneva";
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: antiquewhite;
+    font-size: 1.6vw;
+}
+
+
+
+.topUser {
+    margin-left: 2vw;
+    font-family: "Trebuchet MS","Arial Narrow", "Optima", "Geneva";
+    color: lightgrey;
+    font-size: 1.3vw;
+}
+.topGames{
+    margin-left: 2vw;
+    font-family: "Trebuchet MS","Arial Narrow", "Optima", "Geneva";
+    color: lightgrey;
+    font-size: 1.3vw;
+}
+.newGames{
+    margin-left: 2vw;
+    font-family: "Trebuchet MS","Arial Narrow", "Optima", "Geneva";
+    color: lightgrey;
+    font-size: 1.3vw;
+}
+.newGamesTitle{
+    font-family: "Lucida Console", "Optima", "Geneva";
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 246, 234);
+    font-size: 1.6vw;
+}
+.grid-item3 {
+    grid-column: 11/25;
+    grid-row: 2/12;
+    background-color: slategray;
+    border-radius: 7px;
+    border: 2px solid #2e3346;
+}
+
+.userScoreSpan {
+    float: right;
+    margin-right: 2vw;
+}
+.newGamesSpan{
+    float: right;
+    font-size: 1vw ;
+    margin-right: 2vw;
+    font-style: italic;
+}
+.topUserSpan{
+    float: right;
+    margin-right: 2vw;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+.highlightName{
+    font-weight: bold;
+}
+.madeBy{
+    font-size: 1vw;
+}
+.points{
+    float: right;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbarButton{
+        left: 0;
+    }
+    .title{
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbarButton{
+        left: 0;
+        font-size: 3vw;
+    }
+
+    .grid-item1{
+        grid-column: 1/15;
+    }
+    .grid-item2{
+        grid-column: 15/26;
+        grid-row: 2/6;
+    }
+    .grid-item3{
+        grid-column: 1/26;
+        grid-row: 6;
+    }
+
+    .newGamesTitle{font-size: 3.5vw;}
+    .newGames{font-size: 2.8vw;}
+    .newGamesSpan{font-size: 2.3vw;}
+    .topUserTitle{font-size: 3.5vw;}
+    .topUser{font-size: 2.5vw;}
+    .points{font-size: 2.3vw;}
+    .userFavouriteGames{font-size: 3.5vw}
+    .topGames{font-size: 2.5vw}
+    .topUserSpan{font-size: 2.5vw}
+    .madeBy{display: none}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px){
+    .title{
+        padding-bottom: 0;
+        padding-top: 0.2vw;
+    }
+}
